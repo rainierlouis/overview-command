@@ -1,6 +1,6 @@
 # OVERVIEW
 
-[![npm version](https://badge.fury.io/js/app-overview.svg)](https://badge.fury.io/js/app-overview) [![Build Status](https://travis-ci.org/rainierlouis/overview.svg?branch=development)](https://travis-ci.org/rainierlouis/overview) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[![npm version](https://badge.fury.io/js/app-overview.svg)](https://badge.fury.io/js/app-overview) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 ![Overview](https://i.imgur.com/gyTe5kp.png)
 
@@ -11,15 +11,15 @@ An invaluable tool for developers who will be able to immediately see the layout
 ## Getting Started
 
 * In your chosen CLI - `yarn add app-overview --dev`.
-* Go to the chosen app directory on the CLI - `ov App.js`, this will build the config file and begin the visualisation.
+* Go to the chosen app directory on the CLI - `overview App.js`, this will build the config file and begin the visualisation.
 * Voila, open the `visual.html` found in the Visual folder in your chosen browser.
 * Enjoy!
 
 ## Usage
 
-* `ov _.js` - Set entry file point + begin visualisation
-* `ov -h` - Menu/help
-* `ov -r` - Remove Visual folder + reset.
+* `overview _.js` - Set entry file point + begin visualisation
+* `overview -h` - Menu/help
+* `overview -r` - Remove Visual folder + reset.
 
 ## Built With
 
