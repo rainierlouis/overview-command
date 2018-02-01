@@ -7,14 +7,19 @@
 // Pass the parsed data to VISUAL team
 // Refactor help menu - DONE
 // Take nested paths into account with entry file
+// Add option to view folder path for entry point
+// Open index.html with browser
 
 const cla = require("command-line-args");
+const opn = require("opn");
+
 const log = console.log;
 
 const optionDefinitions = [
   { name: "entry", type: String },
   { name: "help", alias: "h", type: Boolean },
-  { name: "reset", alias: "r", type: Boolean }
+  { name: "reset", alias: "r", type: Boolean },
+  { name: "path", alias: "p", type: Boolean }
 ];
 
 // access flags (options._unknown for user entry)
@@ -58,6 +63,8 @@ const ov = async data => {
     case "reset":
       resetEntire();
       break;
+    case "path":
+      break;
     case "entry":
       reset();
       create(entryPoint);
@@ -67,7 +74,8 @@ const ov = async data => {
         const parsedData = await parsing(entryPoint);
         // TODO: Await return, then pass Parsed Data to Visual module for folder/file creation
         await log("---START THE VISUALISATION---");
-        await visualData(parsedData);
+        // await visualData(parsedData);
+        // TODO: opn('/file/path/visual.html');
       }, 4000);
       break;
     default:
